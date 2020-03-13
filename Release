@@ -1,0 +1,8 @@
+Origin: 依赖源
+Label: 依赖源
+Suite: stable
+Version: 1.8.0
+Codename: 依赖源
+Architectures: iphoneos-arm
+Components: main
+Description: 
