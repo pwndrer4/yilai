@@ -1,566 +1,797 @@
 Package: applist
-Version: 1.5.14
+Version: 1.5.15
 Architecture: iphoneos-arm
 Maintainer: Ryan Petrich <rpetrich@gmail.com>
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 3.0), com.rpetrich.rocketbootstrap (>= 1.0.6~beta) | firmware (<< 7.0)
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 3.0), com.rpetrich.rocketbootstrap (>= 1.0.7~beta3) | firmware (<< 7.0)
 Conflicts: com.a3tweaks.polus (<< 2.0.7)
-Filename: ./debs/applist_1.5.14_iphoneos-arm.deb
-Size: 93138
-MD5sum: cd8cc24cb82a6714a6a1a41424d72e22
-SHA1: d7883ca1eb96611d9856f17c3510872decfce0eb
-SHA256: 81ad24dd58694e8b6b72706b108f75a51d8eb049c856975e9fc86b1976a25b1e
+Filename: ./debs/applist_1.5.15_iphoneos-arm.deb
+Size: 105398
+MD5sum: 5406fec8b03762a594e526f2a332e4ff
+SHA1: aaf3cf696d0e528615793fac516f0f354c16aaef
+SHA256: 7b11b4ddb1079466c6aaabe5cc0a319999f60f0a22d4907f72ba3f88cbdaf96b
 Section: System
 Description: Allow extensions to read the list of installed apps
 Author: Ryan Petrich <rpetrich@gmail.com>
 Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
-Installed-Size: 600
+Installed-Size: 780
 Name: AppList
 Website: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
 dev: rpetrich
 
-Package: ch.ringwald.btstack
-Version: 1.1-1
+Package: backgrounderaction12
+Version: 0.1.0
+Architecture: iphoneos-arm
+Maintainer: akusio <akusio-report@neko2.net>
+Depends: mobilesubstrate, com.opa334.ccsupport
+Filename: ./debs/backgrounderaction12_0.1.0_iphoneos-arm.deb
+Size: 17130
+MD5sum: a575ac060699661085f336be3187c3a2
+SHA1: 3f48218b98162a33c997bb1bb37caf38e90072ce
+SHA256: d6e19b0b781dba622017e06fc7ba7a21d58055e92083b3d7c6f0062b1d0c122c
+Section: 插件
+Description: Add "Toggle Background Mode" action to ControlCenter.
+Author: akusio <akusio-report@neko2.net>
+Icon: file:///Applications/Cydia.app/Sections/Tweaks.png
+Installed-Size: 276
+ModernDepiction: 
+Name: BackgrounderAction for CCSupport
+Sponsor: 幺筒源<409774743@qq.com>
+
+Package: bzip2
+Version: 1.0.6-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Filename: ./debs/bzip2_1.0.6-1_iphoneos-arm.deb
+Size: 53070
+MD5sum: fb8ad9bad8b3bd8c1f3c1fad3cd50901
+SHA1: af8b99bde02484cc33b54770ba570dc03533d094
+SHA256: fced8ef4f004deccb7724c5ddb2703604aa09f39c6f7bf707270c3dcef13e78a
+Section: Archiving
+Description: compression that's slightly better than gzip
+Homepage: http://www.bzip.org/
+Installed-Size: 408
+Priority: important
+
+Package: ca.menushka.menushkaprefs
+Version: 1.2.2
+Architecture: iphoneos-arm
+Maintainer: Menushka Weeratunga
+Depends: mobilesubstrate, preferenceloader, firmware (<< 12.0) | preferenceloader (>> 2.2.3), com.rpetrich.rocketbootstrap
+Filename: ./debs/ca.menushka.menushkaprefs_1.2.2_iphoneos-arm.deb
+Size: 71162
+MD5sum: 093412fefda8446893245ed988cc3ede
+SHA1: 06c30983fb6e463b46d266b72d1d85d6d1062b52
+SHA256: dec095b09437a42eff33fd65a1646b05f87143be81a1142c2969d7cfbaa6636c
+Section: 系统
+Description: A library for preferences in all my tweaks
+Author: Menushka Weeratunga
+Icon: file:///Applications/Cydia.app/Sections/System.png
+Installed-Size: 376
+ModernDepiction: https://repo.menushka.ca/depictions/ca.menushka.menushkaprefs.json
+Name: MenushkaPrefs
+Sponsor: 幺筒源<409774743@qq.com>
+Tag: role::developer
+
+Package: cercube5pp
+Version: 1.0.0.2
+Architecture: iphoneos-arm
+Maintainer: 他是个疯子 <409774743@qq.com>
+Depends: mobilesubstrate, firmware (>= 10.0), cercube | me.alfhaily.cercube
+Conflicts: net.hollr2099.cercube4pp
+Filename: ./debs/cercube5pp_1.0.0.2_iphoneos-arm.deb
+Size: 4054
+MD5sum: c38bb26354dcfa6ddd6b032252340c12
+SHA1: 185854af055dc9c4b9a111d1c13b3b0d229d46d8
+SHA256: a08c5bd5060065c6682a91585c455024226b5fe7521d4759288b4288fba6c8bf
+Section: 插件
+Description: 去掉 Cercube 5 for YouTube.广告
+Author: SarahH12099 <409774743@qq.com>
+Icon: file:///Applications/Cydia.app/Sections/Tweaks.png
+Installed-Size: 69
+ModernDepiction: https://sileo-cydia.github.io/depiction/native/cercube5pp.json
+Name: Cercube 5 for YouTube++
+Sponsor: 幺筒源<409774743@qq.com>
+
+Package: ch.mdaus.foldr
+Version: 0.0.1
 Architecture: iphoneos-arm
 Maintainer: BigBoss <bigboss@thebigboss.org>
-Depends: ch.ringwald.springboardaccess (>= 0.3), preferenceloader (>= 2.2.2), firmware (>= 3.0)
-Breaks: co.cocoanuts.celeste (<= 0.90)
-Filename: ./debs/ch.ringwald.btstack_1.1-1_iphoneos-arm.deb
-Size: 160462
-MD5sum: e037b302e5a9912c752fc57192e8df48
-SHA1: fb08e3f7b398f93a12f563c2b488df7b4c287480
-SHA256: 2f2f03f3e36047167c18cdf6d6c62dc8affc6b7b2237719ce592a5311b833c5b
-Section: Development
-Description: Portable User-Space Bluetooth Stack
-Author: Matthias Ringwald <tickets@btstack.uservoice.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=btstackData
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=btstackData
-Icon: file:///Library/PreferenceBundles/BTstack.bundle/BTstack@2x.png
-Installed-Size: 1713
-Name: BTstack
-Pre-Depends: ldid
-Sponsor: thebigboss.org <http://thebigboss.org>
-Tag: role::developer, purpose::extension, compatible::ios7, compatible::ios8, compatible::ios9
-dev: mringwald
-
-Package: ch.sebikeller.libbedistributedmessagingcenter
-Version: 1.0.0-6
-Architecture: iphoneos-arm
-Maintainer: BigBoss <bigboss@thebigboss.org>
-Filename: ./debs/ch.sebikeller.libbedistributedmessagingcenter_1.0.0-6_iphoneos-arm.deb
-Size: 3934
-MD5sum: d2305eb4823f2a89cb9bd3e14ef91d3e
-SHA1: 80c08d964cef725321ed07e34d050982d225e03a
-SHA256: bb9036c00b8cf30c4d703603ce61f33f4ce2508df62db223ae1310943cf22aa8
-Section: Developer
-Description: adds Blocks to CPDistributedMessagingCenter
-Author: Sebastian Keller <support@app-factory.ch>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libbedistributedmessagingcenterDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libbedistributedmessagingcenterDp
-Installed-Size: 82
-Name: libbedistributedmessagingcenter
-Sponsor: thebigboss.org <http://thebigboss.org>
-Tag: purpose::library, role::developer
-dev: sebikeller
-
-Package: co.cocoanuts.cnimageinserter
-Version: 1.1.1-11
-Architecture: iphoneos-arm
-Maintainer: Youssef Francis <support+cnimageinserter@cocoanuts.co>
-Depends: mobilesubstrate
-Filename: ./debs/co.cocoanuts.cnimageinserter_1.1.1-11_iphoneos-arm.deb
-Size: 11382
-MD5sum: 3c8e8c7f46c3d5da19acb3bd562cd43b
-SHA1: d470b5332105f924fdf016114418c994f168ef90
-SHA256: 2a679e89124eb81095e4e1bf5117087b80cc49fadb5cf8c22d51008f81e019c2
-Section: Development
-Description: Image insertion library for CocoaNuts software
-Author: Youssef Francis <support+cnimageinserter@cocoanuts.co>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=cnimageinserterDp
-Installed-Size: 32
-Name: CNImageInserter
+Depends: firmware(>= 12.0), mobilesubstrate
+Filename: ./debs/ch.mdaus.foldr_0.0.1_iphoneos-arm.deb
+Size: 4824
+MD5sum: 57f4de848115b12c7f00c3c75c90892a
+SHA1: 9fbecf31e7b1a974849694cd4ac7973b0536edbb
+SHA256: 0274fcd21a279a4acfcd521eaffde5999c6beddea5f889817767758b059c98c6
+Section: Tweaks
+Description: A simple "folder enhancing" tweak.
+Author: WheatSword & MackzD <foldrtweak@gmail.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=foldrDp
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=foldrDp
+Installed-Size: 112
+Name: Foldr
 Priority: optional
-Tag: role::developer, purpose::library
-dev: francis
+Sponsor: thebigboss.org <http://thebigboss.org>
+Tag: purpose::extension, compatible::ios12, compatible::ios13
+dev: mdaus
 
-Package: co.cocoanuts.cnkeyboardui
-Version: 1.1.3-2
+Package: cn.yttxcs.adblockplus
+Version: 1.2-2
 Architecture: iphoneos-arm
-Maintainer: Youssef Francis <support+cnkeyboardui@cocoanuts.co>
-Filename: ./debs/co.cocoanuts.cnkeyboardui_1.1.3-2_iphoneos-arm.deb
-Size: 138236
-MD5sum: 02609a26829778abba8317d44060d317
-SHA1: bde0f592e70786b047ffb87255da0feabd242bdf
-SHA256: ae04bfbc5920edbe12a9bc5e611437b6269f9e61e1d6a59021ea2bfef016d5a1
-Section: Development
-Description: Private UI framework for CocoaNuts Keylord keyboards
-Author: Youssef Francis <support+cnkeyboardui@cocoanuts.co>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=cnkeyboarduiDp
-Installed-Size: 204
-Name: CNKeyboardUI Framework
-Pre-Depends: firmware (>= 6.0)
+Maintainer: ReJail <rejail@rejail.ru>
+Filename: ./debs/cn.yttxcs.adblockplus_1.2-2_iphoneos-arm.deb
+Size: 47228
+MD5sum: a32b92111580a755101b2c99c5fee4e4
+SHA1: 8d7472d301929ba04a8d1594d25cd2c87a7beb3f
+SHA256: d6bbba94c572b3bed92fe7c845ee9686e30a8160975296b76dfcec302d6492ff
+Section: 插件
+Description: Блокировка рекламы для ++ твиков
+Author: ReJail
+Icon: file:///Applications/Cydia.app/Sections/Tweaks.png
+Installed-Size: 258
+ModernDepiction: 
+Name: AdBlock ++
 Priority: optional
-Tag: role::developer, purpose::library
-dev: francis
+Sponsor: 幺筒源<409774743@qq.com>
 
-Package: com.ex.substitute
+Package: cn.yttxcs.backgrounderaction13
 Version: 0.1.4
 Architecture: iphoneos-arm
-Maintainer: Sam Bingner
-Depends: firmware (>= 8.0), cy+cpu.arm64, com.saurik.substrate.safemode, uikittools (>=1.1.13-4), darwintools
-Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject, science.xnu.substitute, mobilesubstrate
-Replaces: com.ex.libsubstitute, org.coolstar.tweakinject, mobilesubstrate
-Filename: ./debs/com.ex.substitute_0.1.4_iphoneos-arm.deb
-Size: 48388
-MD5sum: 7164e15d8f12288139c958b498328227
-SHA1: e85d019a74cdbea065e869ab8db90aada2e53ecb
-SHA256: 1f8687c54aa1955dc350f1549500c3643eca45719241322647c24aebabae278e
-Section: System
-Description: Substrate substitute for code substitution
-Author: comex <comexk+da@gmail.com>
-Installed-Size: 712
-Name: Substitute
-Pre-Depends: coreutils-bin, dpkg (>=1.17.11)
-Priority: optional
-Provides: com.ex.libsubstitute, mobilesubstrate (= 0.9.7033+dummy)
+Maintainer: 他是个疯子 <409774743@qq.com>
+Depends: mobilesubstrate, com.opa334.ccsupport
+Filename: ./debs/cn.yttxcs.backgrounderaction13_0.1.4_iphoneos-arm.deb
+Size: 9818
+MD5sum: 2885a10b56d30b28e63d1fe8e1268e81
+SHA1: d74e5838447bed64c301fa391e8658a0d005b519
+SHA256: 5d144677b38aa4ff07b27e19a4d75d231c8c7087bb2b683ad54355dbcbd88a57
+Section: 插件
+Description: [iOS13]Add "Toggle Background Mode" action to ControlCenter.
+Author: akusio  <409774743@qq.com>
+Icon: file:///Applications/Cydia.app/Sections/Tweaks.png
+Installed-Size: 235
+ModernDepiction: 
+Name: BackgrounderAction2 for CCSupport
+Sponsor: 幺筒源<409774743@qq.com>
 
-Package: com.iky1e.libdisplay
-Version: 1.2-1
+Package: cn.yttxcs.libssl1.1.1
+Version: 1.1.1c-1
 Architecture: iphoneos-arm
-Maintainer: Bigboss <bigboss@thebigboss.org>
-Filename: ./debs/com.iky1e.libdisplay_1.2-1_iphoneos-arm.deb
-Size: 7618
-MD5sum: b84717ca9fc3a3e6317a3a7a93a292ef
-SHA1: 5222be62fceb91a743635e2ff389991d85651850
-SHA256: 89985d90db14d05c7219f645fa871e128ab81fe723fd01b247f004fd8a70f5c3
-Section: Development
-Description: manage springboard displays & app launching
-Author: iKy1e (Kyle Howells) <freerunnering@gmail.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libdisplayDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libdisplayDp
-Installed-Size: 19
-Name: LibDisplay
-Sponsor: thebigboss.org <http://thebigboss.org>
-Tag: role::developer, purpose::library
-dev: freerunnering
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Depends: ca-certificates
+Filename: ./debs/cn.yttxcs.libssl1.1.1_1.1.1c-1_iphoneos-arm.deb
+Size: 1176292
+MD5sum: 1e986c97098bbc512f5405b3fa2c2e3e
+SHA1: 9fdb4d573c96daaddb02fbc57cfeb3516ddfee4c
+SHA256: 7ef0cce90b5e1322f1e1cb65b464085a25a85d77c4e3f2bd54be74ff18260b7a
+Section: Security
+Description: OpenSSL Libraries for version 1.1.1
+Installed-Size: 6600
+ModernDepiction: 
+Name: OpenSSL 1.1.1 Libraries
+Pre-Depends: dpkg (>= 1.14.25-8)
+Priority: standard
+Sponsor: 幺筒源<409774743@qq.com>
 
-Package: com.joeyio.flexloader
-Version: 1.3.0-1
+Package: cokepokes.jp.ashikase.libcrashreport
+Version: 1.1.0-2
 Architecture: iphoneos-arm
 Maintainer: BigBoss <bigboss@thebigboss.org>
-Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5000), preferenceloader, applist
-Filename: ./debs/com.joeyio.flexloader_1.3.0-1_iphoneos-arm.deb
-Size: 1888280
-MD5sum: e5c8c89c5e7327e47fa6607c7073b07f
-SHA1: 3eaca1369dac6eb3f3ad46484cee2040d9e98a37
-SHA256: 60e3744601e18d8f32ba7d0f4f4ce9c8484dcfbf13eb88cd14a9e2cfdd2ce1ae
+Depends: cokepokes.jp.ashikase.libsymbolicate (>= 1.9.0), cokepokes.jp.ashikase.libpackageinfo
+Conflicts: jp.ashikase.libcrashreport
+Filename: ./debs/cokepokes.jp.ashikase.libcrashreport_1.1.0-2_iphoneos-arm.deb
+Size: 112746
+MD5sum: 521ed1443135aea00efadebc580dbda4
+SHA1: 07e332c6245d329316fd1dc1920ac0f64d01a900
+SHA256: 851cb8b81fbce201ccef9143ebd53f9be0974dc5d2962c3ef0d36f188fa40e6b
 Section: Development
-Description: dynamically loads Flipboard Explorer into apps
-Author: Xueshi Qiao <qiaoxueshi@gmail.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=flipboardflexloaderDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=flipboardflexloaderDp
-Icon: file:///Library/PreferenceLoader/Preferences/SSFLEXLoader@2x.png
-Installed-Size: 5424
-Name: Flipboard FLEX Loader
+Description: Library to parse and symbolicate crash reports.
+ This library is based upon CrashReporter by kennytm.
+Author: Lance Fetters (ashikase) <support@ashikase.com>
+ModernDepiction: 
+Name: libcrashreport (cokepokes)
+Pre-Depends: firmware (>= 3.0)
+Sponsor: thebigboss.org <http://thebigboss.org>
+Tag: role::developer
+
+Package: cokepokes.jp.ashikase.libpackageinfo
+Version: 1.1.0.1-3
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Replaces: jp.ashikase.libpackageinfo
+Filename: ./debs/cokepokes.jp.ashikase.libpackageinfo_1.1.0.1-3_iphoneos-arm.deb
+Size: 269690
+MD5sum: 7a1d7e0b2c60a8333454885bc0cf6da1
+SHA1: 742c19f3df48a091dbb63c04e24c36625f3259b6
+SHA256: f54a6653940b9b86b9eb1ecf05c1d121ab8ec374dcc10b5ab786b3c402e5cadd
+Section: Development
+Description: Library to retrieve package information.
+Author: Lance Fetters (ashikase) <support@ashikase.com>
+ModernDepiction: 
+Name: libpackageinfo (cokepokes)
+Pre-Depends: firmware (>=3.0)
+Sponsor: thebigboss.org <http://thebigboss.org>
+Tag: role::developer
+
+Package: cokepokes.jp.ashikase.libsymbolicate
+Version: 1.9.0-2
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Conflicts: jp.ashikase.libsymbolicate
+Filename: ./debs/cokepokes.jp.ashikase.libsymbolicate_1.9.0-2_iphoneos-arm.deb
+Size: 102722
+MD5sum: 8d56c481374dfdadd29e963d78c71215
+SHA1: e2d84946eaae45b910c125c9708f5829619752e4
+SHA256: b87c94a7f79a68cd575e3205d4944af4616763f8f6688ead25497eb9dbb0d95a
+Section: Development
+Description: Library to symbolicate memory addresses.
+ This library is based upon CrashReporter by kennytm.
+Author: Lance Fetters (ashikase) <support@ashikase.com>
+ModernDepiction: 
+Name: libsymbolicate (cokepokes)
+Pre-Depends: firmware (>=4.0)
+Sponsor: thebigboss.org <http://thebigboss.org>
+Tag: role::developer
+
+Package: com.bingner.plutil
+Version: 0.2.1
+Architecture: iphoneos-arm
+Maintainer: Samuel Bingner
+Depends: firmware (>=2.0)
+Conflicts: com.ericasadun.utilities
+Filename: ./debs/com.bingner.plutil_0.2.1_iphoneos-arm.deb
+Size: 27146
+MD5sum: dbe356a058196f723918a342470f0106
+SHA1: 7bbdbc3b585fdc37b268156301e3da8c9a02b844
+SHA256: de81533ef2277948eb1b381f75c71fc92f0f47ed9e9a05139241d4370a7ac7b4
+Section: System
+Description: plutil as from erica sadun
+Author: Samuel Bingner
+Installed-Size: 144
+Multi-Arch: foreign
+Name: plutil
+Tag: role::hacker
+
+Package: com.cannathea.afc2d-arm64
+Version: 1.1
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: cy+cpu.arm64, mobilesubstrate, ldid
+Conflicts: com.saurik.afc2d, net.angelxwind.afc2d-arm64, com.mrmadtw.afc2forios11, repo.feng.afc2add11, us.scw.afctwoadd, net.angelxwind.afc2ios70, afc2.25pp, afc2.25pp7, afc2.91, app.taig.afc2
+Replaces: com.saurik.afc2d, net.angelxwind.afc2d-arm64, com.mrmadtw.afc2forios11, repo.feng.afc2add11, us.scw.afctwoadd, net.angelxwind.afc2ios70, afc2.25pp, afc2.25pp7, afc2.91, app.taig.afc2
+Filename: ./debs/com.cannathea.afc2d-arm64_1.1_iphoneos-arm.deb
+Size: 20418
+MD5sum: 5faf9cc4ca15e23015417e120fd6cecc
+SHA1: 804958c17908094008ecf2edfc89756dc2478cc7
+SHA256: ed5c840759c4bcc9b7b014dacf3cf8dcf23e5e97fe8eab03f97b1a8ab47cbf03
+Section: System
+Description: Allow full file-system access over USB for arm64 devices, especially for those using a KPPLess jailbreak.
+Author: saurik, Cannathea <csupport@cannathea.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=afc2kpplessDp
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=afc2kpplessDp
+Installed-Size: 672
+Name: Apple File Conduit "2" (iOS 11+, arm64)
+Pre-Depends: dpkg (>= 1.14.25-8)
+Provides: com.saurik.afc2d, net.angelxwind.afc2d-arm64, com.mrmadtw.afc2forios11, repo.feng.afc2add11, us.scw.afctwoadd, net.angelxwind.afc2ios70, afc2.25pp, afc2.25pp7, afc2.91, app.taig.afc2
+Sponsor: thebigboss.org <http://thebigboss.org>
+Tag: purpose::daemon, compatible::ios10, compatible::ios11, compatible::ios12
+dev: cannathea
+
+Package: com.creaturecoding.libcspreferences
+Version: 1.3.4
+Architecture: iphoneos-arm
+Maintainer: CreatureSurvive <support@creaturecoding.com>
+Filename: ./debs/com.creaturecoding.libcspreferences_1.3.4_iphoneos-arm.deb
+Size: 672934
+MD5sum: 4ae4c779275683d6a5f4852e826d4c59
+SHA1: 377479367263a303b2ca5d9688a89f2da4c04814
+SHA256: f8eb25e93922b1775febbb1d46d397eebd3fa3bd9ba2afa8cc6f434ca97960a7
+Section: 系统
+Description: A Preference Library that doesn't suck!
+Author: CreatureSurvive <support@creaturecoding.com>
+Icon: file:///Applications/Cydia.app/Sections/System.png
+Installed-Size: 4952
+ModernDepiction: 
+Name: libCSPreferences
+Pre-Depends: firmware (>= 8.0), com.ex.libsubstitute | mobilesubstrate, preferenceloader
+Sponsor: 幺筒源<409774743@qq.com>
+Tag: compatible_min::iosiOS9
+
+Package: com.cydiageek.clockator
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: mobilesubstrate, firmware (>= 11.0), preferenceloader
+Filename: ./debs/com.cydiageek.clockator_1.0.0_iphoneos-arm.deb
+Size: 72268
+MD5sum: e4a00f957e0a89d3d3ec864d31db66d7
+SHA1: 940e924d7683ce844ca4d53926b3d073b42e6cc1
+SHA256: 092f41a0c2245ce9f6803fa514fc13196bdc6d162d04d8d2c45c6d3a37313ebc
+Section: Tweaks
+Description: Haptics Actions on Clock App!
+Author: CydiaGeek <lucaluca86@aol.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=clockatorDp
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=clockatorDp
+Icon: file:///Library/PreferenceBundles/Clockator.bundle/icon@2x.png
+Installed-Size: 624
+Name: Clockator
 Priority: optional
+Sponsor: thebigboss.org <http://thebigboss.org>
+Tag: purpose::extension, compatible::ios11, compatible::ios12, compatible::ios13
+dev: lucaluca86
+
+Package: com.foxfort.foxforttools
+Version: 1.0.7
+Architecture: iphoneos-arm
+Maintainer: FoxfortMobile
+Depends: mobilesubstrate, com.foxfort.libfoxfortutils
+Conflicts: com.hackyouriphone.foxforthack, com.pulandres.foxforthack, org.cydia.kiimo.foxforthack, ru.rejail.foxforthack
+Filename: ./debs/com.foxfort.foxforttools_1.0.7_iphoneos-arm.deb
+Size: 141850
+MD5sum: 133284af4c06e7f6f84d229190633012
+SHA1: 7a80d4ff6b52f6e2d35aa15d50d6bc53d185df8d
+SHA256: 6d4aadcbb2b05a51e51b86dd3a79081625d7c80aee1080a91a5df2d71f2e0134
+Section: 系统
+Description: Helper tools for Foxfort tweaks
+Author: FoxfortMobile
+Icon: file:///Applications/Cydia.app/Sections/System.png
+Installed-Size: 640
+ModernDepiction: 
+Name: FoxFort Tools
+Sponsor: 幺筒源<409774743@qq.com>
+Tag: role::developer
+
+Package: com.foxfort.libfoxfortutils
+Version: 1.0.9
+Architecture: iphoneos-arm
+Maintainer: FoxfortMobile
+Depends: firmware (>= 7.0)
+Filename: ./debs/com.foxfort.libfoxfortutils_1.0.9_iphoneos-arm.deb
+Size: 148824
+MD5sum: af1f288e2dee80c9c1a2d6eeccfcc983
+SHA1: 5a8e306d7676926d05be33206ad14e7c1924b414
+SHA256: 0649d0b13a0db87b1b13665f25067c40dfde90bf9b2d91e1d6e5ee5ac9a57aa9
+Section: 系统
+Description: Basic utilities for Foxfort tweaks
+Author: FoxfortMobile
+Icon: file:///Applications/Cydia.app/Sections/System.png
+Installed-Size: 840
+ModernDepiction: 
+Name: libfoxfortutils
+Sponsor: 幺筒源<409774743@qq.com>
+Tag: role::developer
+
+Package: com.modmyi.libswift4
+Version: 4.2.1-2
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: firmware (>= 7.0)
+Filename: ./debs/com.modmyi.libswift4_4.2.1-2_iphoneos-arm.deb
+Size: 18773744
+MD5sum: 0e9aed2309f4121b8beb3a9ebe2b8e6b
+SHA1: ec5f1cd478c8b2dc0a8232a86233458da65e4450
+SHA256: 1175b9f29d2959e41989f75bce90166a3f6e49729e0deb7f71c5a48530771711
+Section: Development
+Description: libswift dylibs for iOS
+Author: Kabir Oberai <oberai.kabir+libswift@gmail.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libswift4Dp
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libswift4Dp
+Installed-Size: 170711
+Name: libswift4
+Sponsor: thebigboss.org <http://thebigboss.org>
+Tag: purpose::extension, compatible::ios10, compatible::ios11
+dev: kabiroberai
+
+Package: com.muris.libgraphite
+Version: 2.2.3
+Architecture: iphoneos-arm
+Maintainer: Geometric Software
+Depends: firmware(>=10.0)
+Filename: ./debs/com.muris.libgraphite_2.2.3_iphoneos-arm.deb
+Size: 346632
+MD5sum: 7a07c174b0fe285ff939f7bb6a6aef4e
+SHA1: b6185789cdceb3cea4cf2e4eafed86ac55ffb05c
+SHA256: b7aacc919bed0cf5f6a2263b2833c37b5e7d565a234bfbaeffe88ce39711aaf0
+Section: Development
+Description: powerful library for iOS development
+Author: Geometric Software
+Installed-Size: 1304
+ModernDepiction: 
+Name: libgraphite
+Sponsor: 幺筒源<409774743@qq.com>
+Tag: purpose::library role::developer
+
+Package: com.pulandres.adblockplus
+Version: 1.1
+Architecture: iphoneos-arm
+Maintainer: Pulandres
+Filename: ./debs/com.pulandres.adblockplus_1.1_iphoneos-arm.deb
+Size: 12722
+MD5sum: 7d6c41826c84d3ffe2d9d52f4e430c67
+SHA1: e443486c8f0d19f991377bd4bfbb69746acbe191
+SHA256: 06d4af27f47e9770bae41503f2b980183c7e57b7076a0d4f1725e90cb4e54176
+Section: 插件
+Description: Adblock for ++ Tweaks
+Author: ReJail
+Icon: file:///Applications/Cydia.app/Sections/Tweaks.png
+Installed-Size: 264
+ModernDepiction: 
+Name: AdBlock ++
+Sponsor: 幺筒源<409774743@qq.com>
+
+Package: com.pulandres.libiarrays
+Version: 1.0.11-beta-10
+Architecture: iphoneos-arm
+Maintainer: Pulandres
+Depends: mobilesubstrate
+Conflicts: com.iarrays.libiarrays1, com.pulandres.libiarrays, com.iarrays.libiarrays
+Filename: ./debs/com.pulandres.libiarrays_1.0.11-beta-10_iphoneos-arm.deb
+Size: 306824
+MD5sum: 0aef201a071a002bf69a5037299ec07b
+SHA1: e612e93cbc3be7cfb6c12998a96594de7dc4f879
+SHA256: 482626304424c91c66696916aa291c5f23448bcd739863b6e23704c47238aa6d
+Section: Development
+Description: Should be used only by IArrays products. This is closed library and no support is provided for this package.
+Author: IArrays <support@iarrays.com>
+Icon: https://repo.pulandres.me/CydiaIcon.png
+ModernDepiction: 
+Name: libiarrays Cracked
+Pre-Depends: firmware (>=7.0)
+Sponsor: 幺筒源<409774743@qq.com>
+
+Package: com.rpetrich.captainhammer
+Version: 0.6.1
+Architecture: iphoneos-arm
+Maintainer: thebigboss.org <http://thebigboss.org>
+Depends: firmware (>= 3), mobilesubstrate, libactivator (>= 1.8.4~beta1)
+Filename: ./debs/com.rpetrich.captainhammer_0.6.1_iphoneos-arm.deb
+Size: 18892
+MD5sum: d85e11a816cc5e805fa9190f3c59351c
+SHA1: 985c062bbb2eb61cc8380aa354ba2c4ac4091e82
+SHA256: cad18951b5fe5f7dace15c0fcf77d73537e1a338a46d203221a09964bee1e2bc
+Section: Development
+Description: Simple debugging tools to enable the remote WebKit inspector (no more support for PonyDebugger)
+Author: Ryan Petrich <rpetrich+captainhammer@gmail.com>
+Installed-Size: 96
+Name: CaptainHammer
+Tag: purpose::extension
+dev: rpetrich
+
+Package: com.rpetrich.respringcachefix
+Version: 0.2
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: firmware (>= 6.1), mobilesubstrate
+Filename: ./debs/com.rpetrich.respringcachefix_0.2_iphoneos-arm.deb
+Size: 2106
+MD5sum: 598b555ac9d5859ab52b71e45321818a
+SHA1: 71c19ce0fdcd2830afb53c32d1d2b4d5f04ca495
+SHA256: 8f0c934d07264b2e28d01e702bce9585b444ba84d946c4b2afa7a80e912a4fdb
+Section: Tweaks
+Description: Cleanup junk temporary files that are dropped every respring
+Author: Ryan Petrich <rpetrich@gmail.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=respringCacheFixData
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=respringCacheFixData
+Installed-Size: 16
+Name: RespringCacheFix
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::extension
-dev: joeyio
-
-Package: com.pantsthief.flexing
-Version: 1.2.0
-Architecture: iphoneos-arm
-Maintainer: BigBoss <bigboss@thebigboss.org>
-Depends: firmware(>= 9.0), mobilesubstrate, libflex
-Conflicts: com.dgh0st.flexall, gg.gh0stbyte.flexivator, com.shmoopillic.flexible, applebetas.ios.tweak.devtools.flexgesture, com.creaturecoding.flexer, com.lacertosusrepo.flex4me, me.nepeta.flexxx, com.ipadkid.flexit, com.qiop1379.flexbar, com.leftyfl1p.reflex
-Filename: ./debs/com.pantsthief.flexing_1.2.0_iphoneos-arm.deb
-Size: 14342
-MD5sum: b85d14051efd843109d248584503dd42
-SHA1: 69fa9f4eabc7e9a5695fdc6995b684269d06e9ce
-SHA256: e13606be6aed384894a34d31de557ef0cd80fe5b173e8aa2c21515cd759a3dee
-Section: Development
-Description: Open FLEX anywhere!
-Author: Tanner Bennett <tannerbennett@me.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=flexingDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=flexingDp
-Icon: file:///Library/Activator/Listeners/com.pantsthief.flexing.toggle/Icon-small@2x.png
-Installed-Size: 206
-Name: FLEXing
-Tag: purpose::extension, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13
-dev: tannerbennett
+dev: rpetrich
 
 Package: com.rpetrich.rocketbootstrap
-Version: 1.0.6
+Version: 1.0.7
 Architecture: iphoneos-arm
 Maintainer: BigBoss <bigboss@thebigboss.org>
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 3.0)
-Filename: ./debs/com.rpetrich.rocketbootstrap_1.0.6_iphoneos-arm.deb
-Size: 29482
-MD5sum: d28611254d30a7f2bdce588f33430447
-SHA1: 378b504082331a3bd8e76a9eb1e9f5689d57a291
-SHA256: 604d53895fa15a388fe45d52e596573997a6b01346316177b26f59b4e582b386
+Filename: ./debs/com.rpetrich.rocketbootstrap_1.0.7_iphoneos-arm.deb
+Size: 38098
+MD5sum: 2a3ee9d89858ade8b304c86407233276
+SHA1: 4d648cd8e58c58d18ed1b5b0bb1dcc790cc43100
+SHA256: 6f27240e5378ee74576162b8e1f9ed0dd754620d48a5c7e5c10037a726c71925
 Section: Tweaks
 Description: Support library allowing tweaks to communicate with sandboxed processes
 Author: Ryan Petrich <rpetrich+rocketbootstrap@gmail.com>
 Depiction: https://www.rpetrich.com/cydia/rocketbootstrap/
 Homepage: https://www.rpetrich.com/cydia/rocketbootstrap/
-Installed-Size: 504
+Installed-Size: 596
 Name: RocketBootstrap
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::extension, role::developer
 dev: rpetrich
 
-Package: com.shmoopillc.alphaloader
-Version: 1.0-6
+Package: com.spark.libsparkapplist
+Version: 1.0.7
+Architecture: iphoneos-arm
+Maintainer: Spark
+Depends: com.rpetrich.rocketbootstrap
+Filename: ./debs/com.spark.libsparkapplist_1.0.7_iphoneos-arm.deb
+Size: 27202
+MD5sum: ff4c06f9322e03a95f971f35de243d3c
+SHA1: 34dfbd95e8e80ae9ccb7fe398c95ee4590833da7
+SHA256: 501fe22bc77ebe8e4aa17df33f02776cd518375a046be6575eef78ae8c88bc89
+Section: 系统
+Description: AppList alternative
+Author: Spark
+Icon: file:///Applications/Cydia.app/Sections/System.png
+Installed-Size: 468
+ModernDepiction: 
+Name: libSparkAppList
+Sponsor: 幺筒源<409774743@qq.com>
+Tag: role::developer
+
+Package: com.spark.libsparkcolourpicker
+Version: 0.0.26
+Architecture: iphoneos-arm
+Maintainer: Spark
+Filename: ./debs/com.spark.libsparkcolourpicker_0.0.26_iphoneos-arm.deb
+Size: 66966
+MD5sum: 8d35465c9479ace1feb07e7c54b8e253
+SHA1: 8a077fbdbcfcf375de9e44c3864b22dad36e4fca
+SHA256: 83e867a60bf9ac401a17b49a133ddb5d702fdd2215c72cfef60bc80402adfc26
+Section: 系统
+Description: Yet another colour picker... But this ones mine!
+Author: Spark
+Icon: file:///Applications/Cydia.app/Sections/System.png
+Installed-Size: 424
+ModernDepiction: 
+Name: libsparkcolourpicker
+Sponsor: 幺筒源<409774743@qq.com>
+Tag: role::developer
+
+Package: com.subdiox.sud0
+Version: 1.0.1
+Architecture: iphoneos-arm
+Maintainer: subdiox
+Filename: ./debs/com.subdiox.sud0_1.0.1_iphoneos-arm.deb
+Size: 4740
+MD5sum: b391aa14e299247004aa65f85678a3aa
+SHA1: 7c58b122f973c5d874f1fec5b40bd360b8c7fd33
+SHA256: 5f81496b4c2b6f5a0d2a1bd27c4bbc448646c4a722ca2efb4685d10fb7d9bb00
+Section: 系统
+Description: sudo command, electra jailbreak supported
+Author: subdiox
+Icon: file:///Applications/Cydia.app/Sections/System.png
+Installed-Size: 260
+ModernDepiction: 
+Name: sud0
+Sponsor: 幺筒源<409774743@qq.com>
+Tag: role::hacker
+
+Package: com.unlimapps.uasharedtools.nostash
+Version: 2.2r-87
 Architecture: iphoneos-arm
 Maintainer: BigBoss <bigboss@thebigboss.org>
-Depends: firmware(>= 4.0), mobilesubstrate, preferenceloader, applist
-Filename: ./debs/com.shmoopillc.alphaloader_1.0-6_iphoneos-arm.deb
-Size: 1612108
-MD5sum: 428fe7c9813b865e85243c327b66e52c
-SHA1: 16f708fedd20bde48447a812a49a6cd1627268d3
-SHA256: 76731c264b3f9712fda01fc5cbb755f4188721b798497ad6ae87798059c92884
+Depends: mobilesubstrate, firmware (>= 11.0)
+Conflicts: com.yourepo.abo1bs.uasharedtoolsno-ads, com.hackyouriphone.uasharedtools, com.unlimapps.uasharedtools.stash, com.unlimapps.uasharedtools (<< 2.2r-36)
+Replaces: com.unlimapps.uasharedtools.stash, com.unlimapps.uasharedtools (<< 2.2r-36)
+Filename: ./debs/com.unlimapps.uasharedtools.nostash_2.2r-87_iphoneos-arm.deb
+Size: 22719492
+MD5sum: 9e457ea36af8eec962dec4acbc4f9f40
+SHA1: f8c9a542d1cc870acb761824c577c55220b61a6c
+SHA256: c452d81de74dae51b489250b6b6478e3a7d56f028ac11fd370e2d85b2ff7da95
 Section: Development
-Description: Tweak to enable ALPHA debugging tool
-Author: Shmoopi <shmoopillc@gmail.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=alphaloaderDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=alphaloaderDp
-Icon: file:///Library/PreferenceBundles/alphaloaderprefs.bundle/AlphaLoaderIcon@2x.png
-Installed-Size: 9318
-Name: AlphaLoader
-Tag: purpose::extension, compatible::ios7, compatible::ios8
-dev: shmoopi
+Description: shared tools for unlimapps tweaks
+Author: UnlimApps Inc. <support@unlimapps.com>
+ModernDepiction: 
+Name: uasharedtools (iOS 11)
+Provides: com.unlimapps.uasharedtools.virtual
+Sponsor: 幺筒源<409774743@qq.com>
+Tag: purpose::library, role::developer
 
-Package: com.sst1337.debugginginformationoverlay
-Version: 1.0.0-1
+Package: com.unlimapps.uasharedtools
+Version: 2.2r-87
 Architecture: iphoneos-arm
 Maintainer: BigBoss <bigboss@thebigboss.org>
-Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5000), com.rpetrich.rocketbootstrap (>= 1.0.3) | firmware (<< 7.0), applist
-Filename: ./debs/com.sst1337.debugginginformationoverlay_1.0.0-1_iphoneos-arm.deb
-Size: 20900
-MD5sum: 7df9db232290bd2fc364c1c31aa2ab15
-SHA1: 6b7db3c665c85a5861d7790ebacf9e29bb950854
-SHA256: dd1fb468b772d1ff9702d2b660517a8c74a6705fa7036ce095a663d2d2681dbb
+Depends: com.unlimapps.uasharedtools.nostash | com.unlimapps.uasharedtools.stash
+Conflicts: com.yourepo.abo1bs.uasharedtoolsno-ads, com.hackyouriphone.uasharedtools
+Filename: ./debs/com.unlimapps.uasharedtools_2.2r-87_iphoneos-arm.deb
+Size: 680
+MD5sum: 14cd3854f0e863411d04725232b59bf0
+SHA1: a22d06c7fa57230e71872a9585b9de1015b427bb
+SHA256: 6e1d638882b14659bc56fa8db0ca4291bfd994101c7254671b91277d83088ccf
 Section: Development
-Description: Show Apple's UIDebuggingInformationOverlay on any app!
-Author: sst1337 <1337sst@gmail.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=debugginginformationoverlayDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=debugginginformationoverlayDp
-Icon: file:///Library/PreferenceBundles/DebuggingInformationOverlay.bundle/DebuggingInformationOverlay@2x.png
-Installed-Size: 350
-Name: DebuggingInformationOverlay
-Priority: optional
-Sponsor: thebigboss.org <http://thebigboss.org>
-Tag: purpose::extension, compatible::ios9, compatible::ios10
-dev: sst1337
+Description: shared tools for unlimapps tweaks
+Author: UnlimApps Inc. <support@unlimapps.com>
+ModernDepiction: 
+Name: uasharedtools
+Sponsor: 幺筒源<409774743@qq.com>
+Tag: purpose::library, role::developer
 
-Package: com.volatile-dev.extbundleloader
-Version: 1.0
+Package: gzip
+Version: 1.9-1
 Architecture: iphoneos-arm
-Maintainer: BigBoss <bigboss@thebigboss.org>
-Depends: mobilesubstrate
-Filename: ./debs/com.volatile-dev.extbundleloader_1.0_iphoneos-arm.deb
-Size: 2854
-MD5sum: c422671e8544a917f6667e0786eabb96
-SHA1: 3a00f0149b419357aefb4734099c683585f7212d
-SHA256: 876ad5a21a81491af43b5cdf1b049a60ed0a845d67aa6ca991c5dcac28abda46
-Section: Development
-Description: Load bundles as extensions in addition to the normal dylibs.
-Author: Thomas Moore (volatile-dev) <iphone-developer@sbcglobal.net>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=extbundleloaderData
-Installed-Size: 20
-Name: ExtBundleLoader
-Sponsor: thebigboss.org <http://thebigboss.org>
-Website: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=extbundleloaderData
-dev: thomasmoore
-tag: purpose::extension, role::developer
-
-Package: com.was.apc
-Version: 3.1.9
-Architecture: iphoneos-arm
-Maintainer: BigBoss <bigboss@thebigboss.org>
-Depends: php
-Filename: ./debs/com.was.apc_3.1.9_iphoneos-arm.deb
-Size: 54216
-MD5sum: 269db444f43f835c9e2b0b915e3da7f6
-SHA1: af76d374e21d99c15d69093edae6462c29dc7214
-SHA256: be22152116f3bc1bccdbbceb45b9e2a1815672eb4ee349ae72e31199c98b5414
-Section: Development
-Description: APC, the alternative PHP cache
-	The Alternative PHP Cache (APC) is a free and open opcode cache for PHP. Its goal is to provide a free, open, and robust framework for caching and optimizing PHP intermediate code. Please see the homepage for further details and setup instructions.
-Author: Wizardry and Steamworks <office@grimore.org>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=apcphphcacheDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=apcphphcacheDp
-Installed-Size: 248
-Name: APC
-Priority: optional
-Sponsor: thebigboss.org <http://thebigboss.org>
-Tag: purpose::console
-dev: wizardryandsteamworks
-
-Package: com.was.libev
-Version: 4.11
-Architecture: iphoneos-arm
-Maintainer: BigBoss <bigboss@thebigboss.org>
-Filename: ./debs/com.was.libev_4.11_iphoneos-arm.deb
-Size: 138876
-MD5sum: 53feec12d82ce9070cd9826b003d766c
-SHA1: 8adcc432653fbf29775c07c44802fb0cc02e36c7
-SHA256: 6dea908ea4528612cf0d112fa34a8a01218668a464615f40a9c457bf01921f19
-Section: Development
-Description: full-featured & high-performance event loop
-	Libev is an event loop: you register interest in certain events (such as a file descriptor being readable or a timeout occurring), and it will manage these event sources and provide your program with events.
-Author: Wizardry and Steamworks <office@grimore.org>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libevDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libevDp
-Installed-Size: 820
-Name: libev
-Priority: optional
-Sponsor: thebigboss.org <http://thebigboss.org>
-Tag: purpose::console
-dev: wizardryandsteamworks
-
-Package: com.zidaneno5.extensionlist
-Version: 1.0-1
-Architecture: iphoneos-arm
-Maintainer: BigBoss <bigboss@thebigboss.org>
-Depends: firmware (>= 8.0), mobilesubstrate, com.rpetrich.rocketbootstrap
-Conflicts: com.a3tweaks.polus (<< 2.0.7)
-Filename: ./debs/com.zidaneno5.extensionlist_1.0-1_iphoneos-arm.deb
-Size: 69858
-MD5sum: 978cd034b3bbb719f511b7b8b832cc63
-SHA1: ec9c7bacdad500a0d2ca4a6adaccc9aa246cf2d6
-SHA256: 3f3232bd12475314e2c1813f228ca893d5e3765a7f515dabe5487d20736e7fc5
-Section: Development
-Description: Provide a list of App Extensions.
-Author: duyongchao <duyongchao.h@gmail.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=extensionlistDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=extensionlistDp
-Installed-Size: 536
-Name: ExtensionList
-Sponsor: thebigboss.org <http://thebigboss.org>
-Tag: purpose::extension, compatible::ios8, compatible::ios, compatible::ios10
-dev: zidaneno5
-
-Package: com.zimm.libdisplaystack
-Version: 2.1-2
-Architecture: iphoneos-arm
-Maintainer: Dan Zimmerman <daniel.zimmerman@me.com>
-Depends: mobilesubstrate
-Filename: ./debs/com.zimm.libdisplaystack_2.1-2_iphoneos-arm.deb
-Size: 6742
-MD5sum: ad7230a882d088e79a5a6e027065dc51
-SHA1: 8163cd30c817832ed227e41654336daabc90f58c
-SHA256: 1a5a923c332ee679558ebecf10457315491f96586b4631672821777973bfbbb8
-Section: Development
-Description: Library for switching, quitting and exiting apps
-Author: Dan Zimmerman <daniel.zimmerman@me.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libdisplaystackData
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libdisplaystackData
-Installed-Size: 18
-Name: libdisplaystack
-dev: thezimm
-
-Package: cydia
-Version: 1.1.32~b24
-Architecture: iphoneos-arm
-Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
-Depends: libapt | apt7-lib, apt-key | apt7-key, cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.19.1), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.14), xz
-Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
-Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
-Filename: ./debs/cydia_1.1.32~b24_iphoneos-arm.deb
-Size: 1284404
-MD5sum: 498e841acd5411cb9bec016021fbe92d
-SHA1: 447e7cd2fb36abd126b527a7bb292b67c744e0d7
-SHA256: 8f30c6fc7ac80dae227a758eda09051b7ad537a5d17fdbb8c61a4d671fa89bd7
-Section: Packaging
-Description: graphical iPhone front-end for APT
-Author: Jay Freeman (saurik) <saurik@saurik.com>
-Depiction: http://cydia.saurik.com/info/cydia/
-Icon: file:///Applications/Cydia.app/Icon-60.png
-Installed-Size: 7560
-Name: Cydia Installer
-Pre-Depends: debianutils, dpkg (>= 1.16.1), firmware (>=5.0)
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Filename: ./debs/gzip_1.9-1_iphoneos-arm.deb
+Size: 70944
+MD5sum: e213e43744d8f8038ec905a5e00d55b5
+SHA1: dd3ab8e2989362c349ccf3bcab70311024216d02
+SHA256: cf8f55c4ec6cee4c97519460f913a571dff12156709b3f43156ea32f56e31bd6
+Section: Archiving
+Description: the standard Unix compression algorithm
+Homepage: http://www.gzip.org/
+Installed-Size: 496
+Multi-Arch: foreign
 Priority: required
-Provides: bigbossbetarepo, cydia-sources
-Tag: purpose::uikit, cydia::essential, role::enduser
 
-Package: fm.was.libevent
-Version: 1.4.3-1
+Package: jp.akusio.backgrounderaction12
+Version: 0.1.0
+Architecture: iphoneos-arm
+Maintainer: akusio <akusio-report@neko2.net>
+Depends: mobilesubstrate, com.opa334.ccsupport
+Filename: ./debs/jp.akusio.backgrounderaction12_0.1.0_iphoneos-arm.deb
+Size: 17136
+MD5sum: ddd4404e4eb188e1e4633618b070aae3
+SHA1: 30c5d2f61cb8391a2071890c1e1d86de5d099ae8
+SHA256: 87e3077e6d098ca6a756a851b7586b17a0767a060de4bbef901c4a4cacdbc6d4
+Section: 插件
+Description: Add "Toggle Background Mode" action to ControlCenter.
+Author: akusio <akusio-report@neko2.net>
+Icon: file:///Applications/Cydia.app/Sections/Tweaks.png
+Installed-Size: 276
+ModernDepiction: 
+Name: BackgrounderAction for CCSupport
+Sponsor: 幺筒源<409774743@qq.com>
+
+Package: jp.ashikase.techsupport
+Version: 1.5.0.1-2
 Architecture: iphoneos-arm
 Maintainer: BigBoss <bigboss@thebigboss.org>
-Depends: firmware (>= 3.0)
-Filename: ./debs/fm.was.libevent_1.4.3-1_iphoneos-arm.deb
-Size: 136500
-MD5sum: 13d6fbf748b26a0b4ebd65b5db109595
-SHA1: 038532d7c8cac53e47232ae8656bf6cc82ffc0d7
-SHA256: afb163a211a90a61488598ae1fe869430bc83de57dcff68e304f99ab1c8e913f
+Depends: cokepokes.jp.ashikase.libpackageinfo
+Conflicts: cokepokes.jp.ashikase.techsupport
+Filename: ./debs/jp.ashikase.techsupport_1.5.0.1-2_iphoneos-arm.deb
+Size: 164640
+MD5sum: cbb55a305f93a89eb0a9a9e63c79d9e4
+SHA1: 3266bb7d8185ac304cfadae68ddb9bfda60008eb
+SHA256: 09f19b0820d03eb391da93f24e6530138b789675a752869104af8ebb6de10b3a
 Section: Development
-Description: a mechanism to execute a callback function
-Author: Wizardry and Steamworks (WaS) <office@grimore.org>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libeventDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libeventDp
-Installed-Size: 2217
-Name: libevent
-Priority: optional
-Sponsor: thebigboss.org <http://thebigboss.org>
-Tag: role::developer, purpose::extension
-dev: wizardryandsteamworks
-
-Package: jp.ashikase.libcrashreport
-Version: 1.1.0-1
-Architecture: iphoneos-arm
-Maintainer: BigBoss <bigboss@thebigboss.org>
-Depends: jp.ashikase.libsymbolicate (>= 1.9.0), jp.ashikase.libpackageinfo
-Filename: ./debs/jp.ashikase.libcrashreport_1.1.0-1_iphoneos-arm.deb
-Size: 30828
-MD5sum: 5361d4f5e6b5dc4c3be513f51c3dbe42
-SHA1: 56a8d84e9c68c8f26fcd5057fb07eebd6e18a684
-SHA256: a826702e56c6ba6c6604a6798e693bef5e9f0cfcf9659c5d5287633109cbd97f
-Section: Development
-Description: Library to parse and symbolicate crash reports.
-    This library is based upon CrashReporter by kennytm.
+Description: Framework to assist in providing feedback to developers.
 Author: Lance Fetters (ashikase) <support@ashikase.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libcrashreportData
-Homepage: http://github.com/ashikase/libcrashreport
-Installed-Size: 196
-Name: libcrashreport
-Pre-Depends: firmware (>= 3.0)
+ModernDepiction: 
+Name: TechSupport Framework
+Pre-Depends: firmware (>=3.0)
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: role::developer
-dev: ashikase
 
-Package: libbox2d
-Version: 2.3.0-1
-Architecture: iphoneos-arm
-Maintainer: Bigboss <bigboss@thebigboss.org>
-Filename: ./debs/libbox2d_2.3.0-1_iphoneos-arm.deb
-Size: 141608
-MD5sum: abc5a93d0377bdc97d90e797f0a8373c
-SHA1: d9e5f94d9f7a852d934dcbaada50d8091dea4885
-SHA256: baa060ada98367aa81e4bd69aa179405f42ac8a1abd372ab2be1f3578d80f65d
-Section: Development
-Description: A 2D physics engine written by Erin Catto
-Author: Conrad Kramer <support@kramerapps.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libbox2dDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libbox2dDp
-Installed-Size: 557
-Name: Box2D
-Sponsor: thebigboss.org <http://thebigboss.org>
-Tag: role::developer, purpose::library
-dev: conradkramer
-
-Package: libclang-cpp10
-Version: 10.0.0~svn-20191106+dcaf932-1
+Package: libfragmentzip
+Version: 58-1
 Architecture: iphoneos-arm
 Maintainer: Sam Bingner <maintainer@sbdhi.com>
-Depends: libllvm10
-Filename: ./debs/libclang-cpp10_10.0.0~svn-20191106+dcaf932-1_iphoneos-arm.deb
-Size: 8381616
-MD5sum: f8b2398d54ce7f28a9959ebfd9fdd78f
-SHA1: e3a8182fe51ad10cdd53acae6cc03383f62ecc15
-SHA256: e171855e2616c6515166cacd90c9dd4860ec061cd3dddac1986c544223334466
+Depends: curl, libgeneral, libzip
+Filename: ./debs/libfragmentzip_58-1_iphoneos-arm.deb
+Size: 7750
+MD5sum: d2a8b25b0110f2a86df2d2b31c3a0481
+SHA1: c77e3a9cad30625a194d477b75e7c317a88fc631
+SHA256: 8baec3bd779be6685d2203334f0e67b56edb0c2d068f801bacde50121ca06b9d
 Section: Development
-Description: Modular compiler and toolchain technologies, runtime library
-Installed-Size: 79040
+Description: A library allowing to download single files from a remote zip archive
+Installed-Size: 152
+Name: Fragment Zip Library
 Pre-Depends: dpkg (>= 1.14.25-8)
 Priority: optional
 
-Package: libelf
-Version: 0.8.13
+Package: libhooker-strap
+Version: 1.0
 Architecture: iphoneos-arm
-Maintainer: Bigboss <bigboss@thebigboss.org>
-Filename: ./debs/libelf_0.8.13_iphoneos-arm.deb
-Size: 52278
-MD5sum: cf3ce47eecf3f61e1a34b52f39d2db1b
-SHA1: 87d7a9990a1f430167cb433437c13aec294d0243
-SHA256: c13a95a64f083094a1821a311c85caf21a24f8c011e89605500ce45547f584f6
-Section: Development
-Description: ELF executable file manipulation library
-Author: Arpad Goretity (H2CO3) <arpad.goretity@gmail.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libelfDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libelfDp
-Installed-Size: 245
-Name: libelf
-Sponsor: thebigboss.org <http://thebigboss.org>
-Tag: role::developer, purpose::library
-dev: arpadgoretity
+Maintainer: CoolStar <coolstarorganization@gmail.com>
+Filename: ./debs/libhooker-strap_1.0_iphoneos-arm.deb
+Size: 9810
+MD5sum: 5a0a6d675e7bab3ae35c52a54528e9a8
+SHA1: d1e050dfca5b70436c6b70f59cffa0fb3b1867f5
+SHA256: afa022fda961caa93740ec716f71e8b624f44e8b00d93555e696770f0a940443
+Section: 系统
+Description: Support package for Tweak Injection on checkm8 based jailbreaks (Fugu or checkra1n)
+Author: CoolStar <coolstarorganization@gmail.com>
+Icon: file:///Applications/Cydia.app/Sections/System.png
+ModernDepiction: 
+Name: libhooker bootstrapper (checkm8)
+Sponsor: 幺筒源<409774743@qq.com>
 
-Package: libexif
-Version: 0.6.20
+Package: libiarrays
+Version: 1.0.9-beta-11
 Architecture: iphoneos-arm
-Maintainer: Bigboss <bigboss@thebigboss.org>
-Filename: ./debs/libexif_0.6.20_iphoneos-arm.deb
-Size: 301228
-MD5sum: 20486b005f0dfedbe47806f240f7e9df
-SHA1: b5a434707d246bee07b048ca2f051594272de121
-SHA256: 8d156ea3fd79d2862f226658382ac4184b5e6a76843290b00ac0a73b15447f7d
+Maintainer: 他是个疯子 <409774743@qq.com>
+Conflicts: com.iarrays.libiarrays1, com.iarrays.libiarrays
+Filename: ./debs/libiarrays_1.0.9-beta-11_iphoneos-arm.deb
+Size: 288382
+MD5sum: d1ccb098bd01adf72b641ff36378adc5
+SHA1: 43fcafd34371dbfbfde6f888afc0bfddc0b4acf6
+SHA256: 05bf5e624fc85dcffff45f36e478b0c0210254ad678cc629ae78b2b8c0377a1c
 Section: Development
-Description: support lib for EXIF image metadata
-Author: Arpad Goretity (H2CO3) <arpad.goretity@gmail.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libexifData
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libexifData
-Installed-Size: 1013
-Name: libexif
-Sponsor: thebigboss.org <http://thebigboss.org>
-Tag: role::developer, purpose::library
-dev: arpadgoretity
+Description: Should be used only by IArrays products. This is closed library and no support is provided for this package.
+Author: IArrays  <409774743@qq.com>
+Icon: https://sileo-cydia.github.io/assets/libiarrays/icon.png
+ModernDepiction: https://sileo-cydia.github.io/depiction/native/libiarrays.json
+Name: libarrays Cracked
+Sponsor: 幺筒源<409774743@qq.com>
 
-Package: libresolv
-Version: 25-3
+Package: lzip
+Version: 1.20-1
 Architecture: iphoneos-arm
 Maintainer: Sam Bingner <maintainer@sbdhi.com>
-Filename: ./debs/libresolv_25-3_iphoneos-arm.deb
-Size: 674
-MD5sum: 321b2f0e1b800cf8fa3222c2e03c2b09
-SHA1: 56666b9dc3f4636de441680cbb454da4f742035c
-SHA256: 007c62dcaa578c09b83c318e66173d433b08bf777afa29a365763819b1f873e6
+Filename: ./debs/lzip_1.20-1_iphoneos-arm.deb
+Size: 37300
+MD5sum: 86ea442a830e193de22f911918afce5d
+SHA1: c476dec13c0dbc0e2a8d7e679c455ded035431b1
+SHA256: 504780f9f8e14418985b2d4286dbcef83224cc13382e1f60ef08cd42387c29ab
+Section: Archiving
+Description: Lzip is a lossless data compressor with a user interface similar to the one of gzip or bzip2.
+Homepage: http://savannah.nongnu.org/projects/lzip/
+Installed-Size: 272
+Pre-Depends: dpkg (>= 1.14.25-8)
+Priority: optional
+
+Package: me.alfhaily.adblockforyoutube
+Version: 1.0.7
+Architecture: iphoneos-arm
+Maintainer: Majd Alfhaily <freemanrepo@me.com>
+Depends: firmware (>= 8.0)
+Filename: ./debs/me.alfhaily.adblockforyoutube_1.0.7_iphoneos-arm.deb
+Size: 46632
+MD5sum: 13857b0ae2bdd845cda6fa96e715b690
+SHA1: 3be878feffc107741f21fe731afc5c7716174035
+SHA256: 55c874439be1ef390dd9a6487470bd1d61d3c23da0ec37cb1ad5fc85e5d464b0
+Section: 插件
+Description: Block YouTube Ads and Video Ads
+Author: Majd Alfhaily
+Icon: file:///Applications/Cydia.app/Sections/Tweaks.png
+ModernDepiction: 
+Name: AdBlock for YouTube
+Priority: optional
+Sponsor: 幺筒源<409774743@qq.com>
+
+Package: me.alfhaily.cercube.lib
+Version: 1.1.1
+Architecture: iphoneos-arm
+Maintainer: Majd Alfhaily <freemanrepo@me.com>
+Depends: firmware (>= 8.0)
+Filename: ./debs/me.alfhaily.cercube.lib_1.1.1_iphoneos-arm.deb
+Size: 6201536
+MD5sum: f349afa3112f22c69133a24f50240f3a
+SHA1: 62758e7787ebad3dc6565014c84e4c8ceab78fae
+SHA256: ed61eebdc8fde93abcb8c62eda0458eaaf539fa18f037ea360b8d63723b0d009
+Section: Development
+Description: A library used by Cercube tweak
+Author: Majd Alfhaily
+ModernDepiction: 
+Name: libCercube
+Priority: optional
+Sponsor: 幺筒源<409774743@qq.com>
+
+Package: openssh
+Version: 8.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Depends: libssl1.1.1
+Filename: ./debs/openssh_8.1-1_iphoneos-arm.deb
+Size: 657520
+MD5sum: c78836e29190054ebd9e982fe0d5c71b
+SHA1: 645d378202cffa8c5725d16306868795096733bb
+SHA256: e31a640ee0f1f85f92d636ba7774d8d9847dff9c73ae8785e2bf4e9ced79ef22
 Section: Networking
-Description: Darwin's copy of Bind's resolution engine
-Installed-Size: 16
+Description: secure remote access between machines
+Depiction: http://cydia.saurik.com/info/openssh/
+Installed-Size: 9824
+Name: OpenSSH
 Pre-Depends: dpkg (>= 1.14.25-8)
-Priority: optional
+Priority: important
 
-Package: net.limneos.classdump-dyld
-Version: 1.3-1
+Package: org.coolstar.sileo
+Version: 1.7.4
 Architecture: iphoneos-arm
-Maintainer: BigBoss <bigboss@thebigboss.org>
-Filename: ./debs/net.limneos.classdump-dyld_1.3-1_iphoneos-arm.deb
-Size: 142542
-MD5sum: 4b9df5bfe81fc1b2481c9f61215b2969
-SHA1: d57b7e8d549e5adc0d139e66adba985df002280e
-SHA256: 29a77f6463e6e59d8cea14d3e813a94d1877d066c05fe29c04950a364c3c3acf
-Section: Development
-Description: Class-dump most images on device or shared cache
-Author: Elias Limneos <iphone@limneos.net>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=classdumpdyldDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=classdumpdyldDp
-Icon: file:///var/mobile/Library/SBSettings/Themes/Default/iMessage/on.png
-Installed-Size: 937
-Name: classdump-dyld
-Sponsor: thebigboss.org <http://thebigboss.org>
-Tag: role::hacker, compatible::ios7, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13
-dev: limneos
-
-Package: org.h2co3.bingtranslate
-Version: 0.4
-Architecture: iphoneos-arm
-Maintainer: BigBoss <bigboss@thebigboss.org>
-Depends: org.h2co3.carbonatejson
-Filename: ./debs/org.h2co3.bingtranslate_0.4_iphoneos-arm.deb
-Size: 14418
-MD5sum: e1056a7b253aa2c3a605a0123748c22a
-SHA1: 10d2c549bcdbe419c363746bf70c5547a96178fb
-SHA256: 491fda77c8165fd27ddcd647b986476c940f6082d93b984dc6ccd3b95d5d8f79
-Section: Development
-Description: client library for translate API
-Author: Arpad Goretity (H2CO3) <arpad.goretity@gmail.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=bingtranslateapiDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=bingtranslateapiDp
-Installed-Size: 58
-Name: BingTranslate.framework
-Sponsor: thebigboss.org <http://thebigboss.org>
-Tag: purpose::library, role::developer
-dev: arpadgoretity
+Maintainer: CoolStar <coolstarorganization@gmail.com>
+Depends: apt (>= 1.8.0), apt-lib (>= 1.8.0-sileo) | libapt (>=1.8.2-sileo2), apt-key (>= 1.8.0), dpkg (>= 1.19.2-4), cydia, zsh | bash, cy+cpu.arm64, firmware(>=12.2) | org.swift.libswift (>=5.0)
+Conflicts: cydia-gui (<<99.0)
+Filename: ./debs/org.coolstar.sileo_1.7.4_iphoneos-arm.deb
+Size: 4425280
+MD5sum: 9c2f71c5e91dd73aad2abf273064eaa9
+SHA1: 1fc7ed278c4e20ddd8794e807df3787044d62f8e
+SHA256: 010e4d9c23f6e4fc78fb8600d0e9d624a8105db922b85b858269124d889619cd
+Section: Packaging
+Description: A proper APT client for iOS 11 and higher. (View this package in Sileo to see the full depiction)
+Author: Sileo Team <getsileoapp@gmail.com>
+Name: Sileo
+Pre-Depends: debianutils, dpkg (>= 1.18)
+Priority: required
+SileoDepiction: https://coolstar.moe/sileoassets/depictionoverride.php?package=org.coolstar.sileo
+Tag: cydia::essential
 
 Package: org.h2co3.carbonatejson
 Version: 0.1
@@ -583,47 +814,60 @@ Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::library, role::developer
 dev: arpadgoretity
 
-Package: org.thebigboss.bunny
-Version: 0.93b
+Package: org.swift.libswift-3.1-arm64
+Version: 3.1.1-2
 Architecture: iphoneos-arm
-Maintainer: BigBoss <bigboss@thebigboss.org>
-Filename: ./debs/org.thebigboss.bunny_0.93b_iphoneos-arm.deb
-Size: 81574
-MD5sum: a721dd4992f1b055937795290ea463f3
-SHA1: ea5280ba8a7b2e605b621ffdf74e4b5d131df7f0
-SHA256: abc2c8721610b0113cf6cfb08412117f99880dcceb8f8fd6623a4e4e7b8469c9
-Section: Development
-Description: general purpose fuzzer for C programs
-Author: Tcf38012  <tcf38012@gmail.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=bunnythefuzzerDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=bunnythefuzzerDp
-Installed-Size: 199
-Name: bunny-the-fuzzer
+Maintainer: Kabir Oberai <support@kabiroberai.com>
+Depends: cy+cpu.arm64
+Filename: ./debs/org.swift.libswift-3.1-arm64_3.1.1-2_iphoneos-arm.deb
+Size: 1659556
+MD5sum: 2c6101cf7268049278083fda6cdb1348
+SHA1: e1c59a6ce24dcbac7112f0d39da93d228c3e1b93
+SHA256: 3dc86376bc9e9b8b26ff9b75155eb66285ad0271334c5e7891a5781266fe42b4
+Section: Developer
+Description: libswift dylibs for iOS
+Author: Kabir Oberai <support@kabiroberai.com>
+Installed-Size: 11696
+Name: libswift 3.1 (64 bit)
 Tag: role::developer
-dev: tcf38012
 
-Package: org.thebigboss.groff-base
-Version: 1.22.3-1
+Package: org.swift.libswift
+Version: 5.0
 Architecture: iphoneos-arm
 Maintainer: BigBoss <bigboss@thebigboss.org>
-Depends: firmware (>= 4.0)
-Conflicts: groff-base, groff
-Replaces: groff-base, groff
-Filename: ./debs/org.thebigboss.groff-base_1.22.3-1_iphoneos-arm.deb
-Size: 2395770
-MD5sum: 03bc327ba7cd130d6c62f18e5083f0ce
-SHA1: ad4cbe2e9c8777bc31721dbab7fb524cdcd5f602
-SHA256: 1ad76b90d00f3977b593a6d22fcfeaea30cc7b261102d0dd679166b787b33dc4
+Depends: firmware (>= 7.0)
+Filename: ./debs/org.swift.libswift_5.0_iphoneos-arm.deb
+Size: 34559404
+MD5sum: 7a5f1ce4acf4277fd5e23217d53d9c4f
+SHA1: 7b49c7cceb60d95f9aeb121b2695a38a6c7bea2a
+SHA256: d78153853892d427f7bb55281dbee97f42835c654389d27834682aceb37af88a
 Section: Development
-Description: typesetting system for formatted output.
-Author: idotce <idotce@gmail.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=groffbaseDp
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=groffbaseDp
-Installed-Size: 20116
-Name: groff
+Description: Swift runtime for iOS
+Author: Kabir Oberai <oberai.kabir+libswift@gmail.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libswiftDp
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libswiftDp
+Installed-Size: 183124
+Name: libswift (stable)
 Sponsor: thebigboss.org <http://thebigboss.org>
-Tag: purpose::console, role::developer
-dev: idotce
+Tag: purpose::extension, compatible::ios12
+dev: kabiroberai
+
+Package: p7zip
+Version: 16.02-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Filename: ./debs/p7zip_16.02-1_iphoneos-arm.deb
+Size: 930130
+MD5sum: 6661ea346cd9f07b626384869fbab414
+SHA1: 1f1bd63961328c1a33096abaacdf1f8ca7934eb8
+SHA256: cda97749c51a46b56f41276b792496492e5dc9f1fed3efed2963f121ceff99af
+Section: Archiving
+Description: claims to be a good compressor
+Installed-Size: 9080
+Multi-Arch: foreign
+Name: 7-zip (POSIX)
+Pre-Depends: dpkg (>= 1.14.25-8)
+Priority: optional
 
 Package: preferenceloader
 Version: 2.2.4
@@ -644,4 +888,111 @@ Installed-Size: 525
 Name: PreferenceLoader
 Tag: role::hacker, purpose::library, compatible::ios7, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13
 dev: dustinhowett
+
+Package: ru.rejail.libnepeta
+Version: 0.1.1
+Architecture: iphoneos-arm
+Maintainer: ReJail <rejail@rejail.ru>
+Filename: ./debs/ru.rejail.libnepeta_0.1.1_iphoneos-arm.deb
+Size: 26874
+MD5sum: 6b831666bbacfd9ce7151bfa01bc7412
+SHA1: 7d7ce3e1b5a5e548284c82f4b13936628f065c69
+SHA256: 537c1404cd4cd47904fa377befade52b3a7b5a37fb1982fdfbd9563f3e135863
+Section: 系统
+Description: Настройка цвета для твиков Nepeta
+Author: Nepeta
+Icon: file:///Applications/Cydia.app/Sections/System.png
+Installed-Size: 208
+ModernDepiction: 
+Name: libnepeta
+Sponsor: 幺筒源<409774743@qq.com>
+
+Package: ru.rejail.utils
+Version: 0.0.4
+Architecture: iphoneos-arm
+Maintainer: ReJail <rejail@rejail.ru>
+Filename: ./debs/ru.rejail.utils_0.0.4_iphoneos-arm.deb
+Size: 18544
+MD5sum: ac882d4e5cb8c28d5f7cd1109bc04c41
+SHA1: fb5b88d355ced6b1491b4a5c4649e41cdbcb4219
+SHA256: 35e987c0b280934bdbf488a2a7a8a5d0efece6657b25b6e1511a6fccc9628112
+Section: 系统
+Description: A collection of common functions for my tweaks. More documentation will be coming soon.
+Author: Maxwell Dausch <max.dausch@gmail.com>
+Icon: file:///Applications/Cydia.app/Sections/System.png
+Installed-Size: 271
+ModernDepiction: 
+Name: MDausch Utils
+Sponsor: 幺筒源<409774743@qq.com>
+
+Package: unzip
+Version: 6.0+deb9u1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Filename: ./debs/unzip_6.0+deb9u1-1_iphoneos-arm.deb
+Size: 90196
+MD5sum: 75f0c28bdfd5dd04c1f5d48ba9f8860f
+SHA1: 6fc3212fd33d1ce912f4e7fb810c6be38594149c
+SHA256: 3ad2e6282193a521dba00c8f79c80661cf4f96064f1ba75e56ba80e7ee512766
+Section: Archiving
+Description: de-compesses files in zip format
+Installed-Size: 808
+Pre-Depends: dpkg (>= 1.14.25-8)
+Priority: important
+
+Package: us.diatr.sileorespring
+Version: 1.1
+Architecture: iphoneos-arm
+Maintainer: Diatrus
+Depends: mobilesubstrate
+Filename: ./debs/us.diatr.sileorespring_1.1_iphoneos-arm.deb
+Size: 962
+MD5sum: fa8ef526e9a6527c7816f08ec5fe737d
+SHA1: bf8b174f846a0e95d8169192ef1b298bf086cc1c
+SHA256: 116a648fb86181850f0f565eb7016b1f87718cba7d05b2ae869ea2edc2d9cb8d
+Section: 插件
+Description: Adds respring capability to Sileo.
+Author: Diatrus
+Icon: file:///Applications/Cydia.app/Sections/Tweaks.png
+ModernDepiction: 
+Name: Respring Essential
+Sponsor: 幺筒源<409774743@qq.com>
+
+Package: ws.hbang.alderis
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: HASHBANG Productions <support@hbang.ws>
+Depends: firmware (>= 12.0), firmware (>= 12.2) | org.swift.libswift (>= 5.0)
+Conflicts: org.thebigboss.libcolorpicker, me.nepeta.libcolorpicker
+Replaces: org.thebigboss.libcolorpicker, me.nepeta.libcolorpicker
+Filename: ./debs/ws.hbang.alderis_1.0_iphoneos-arm.deb
+Size: 492006
+MD5sum: 72efd98dbda44f2a07121870ae247279
+SHA1: f85eacea1566ba07940c8a6d6fc3ac405347fda1
+SHA256: 964c5365e299a8daf25dd349e49f8d7bde4122809a5ef7aeb77e124f1fff5886
+Section: Development
+Description: Color picker support library for tweaks
+Author: HASHBANG Productions <support@hbang.ws>
+Installed-Size: 2172
+ModernDepiction: 
+Name: Alderis Color Picker
+Provides: org.thebigboss.libcolorpicker (= 1.6.7), me.nepeta.libcolorpicker (= 1.6.2-3)
+Sponsor: 幺筒源<409774743@qq.com>
+Tag: role::developer, compatible::ios12, compatible::ios13
+
+Package: zip
+Version: 2.32-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Filename: ./debs/zip_2.32-1_iphoneos-arm.deb
+Size: 52214
+MD5sum: b1cef31bfb417f23e93861159176af0b
+SHA1: 32ea892c1964f8f6893b0d157b5497aab3769588
+SHA256: 55b500e5750a7fe9395f8571749c0e04a90111b271832e552b6a3cf64324393c
+Section: Archiving
+Description: standard Windows compression tool
+Installed-Size: 728
+Multi-Arch: foreign
+Pre-Depends: dpkg (>= 1.14.25-8)
+Priority: important
 
